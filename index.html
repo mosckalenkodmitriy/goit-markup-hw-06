@@ -481,27 +481,24 @@
           </ul>
         </div>
         <div class="telegram">
-          <form>
+          <form class="form-telegram">
             <label for="mail" class="mail">
-              <div class="mailing">
-                <h3 class="subscribe">Подпишитесь на рассылку</h3>
-                <input
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  placeholder="E-mail"
-                  class="email"
-                />
-              </div>
-              <button class="btn-teleg">
-                Подписаться
-                <svg class="icon-join-teleg" width="24" height="24">
-                  <use
-                    href="./images/icons.svg/symbol-defs-opt.svg#icon-telegram"
-                  ></use>
-                </svg>
-              </button>
-            </label>
+              Подпишитесь на рассылку
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+                class="email"
+            /></label>
+            <button class="btn-teleg">
+              Подписаться
+              <svg class="icon-join-teleg" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs-opt.svg#icon-telegram"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -552,20 +549,22 @@
           </label>
 
           <label class="form-field">
-           <textarea
-                class="form-textarea"
-                name="feedback"
-                rows="5"
-                placeholder="Введите текст"
+            <textarea
+              class="form-textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Введите текст"
             ></textarea>
             <span class="form-label-textarea">Комментарий</span>
           </label>
 
           <label class="form-checked">
-            <input type="checkbox"
-                class="checkbox">
+            <input type="checkbox" class="checkbox" />
             <span class="icon-check"></span>
-            <span class="check-text">Соглашаюсь с рассылкой и принимаю <a class="check-rule" href="#">Условия договора</a></span>
+            <span class="check-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="check-rule" href="#">Условия договора</a></span
+            >
           </label>
         </form>
         <div class="close" data-modal-close></div>
@@ -587,7 +586,6 @@
           refs.modal.classList.toggle("is-hidden");
         }
       })();
-    </script>
     </script>
   </body>
 </html>

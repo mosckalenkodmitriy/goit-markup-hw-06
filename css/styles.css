@@ -648,11 +648,22 @@ footer .container {
 .telegram {
   margin-left: 93px;
   padding: 0;
-  display: flex;
 }
 .telegram .mail {
-  display: flex;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0;
 }
+.form-telegram {
+  display: flex;
+  height: 86px;
+}
+
 .telegram .email {
   padding: 14px 295px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -666,13 +677,9 @@ footer .container {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.06;
+  margin-top: 20px;
 }
 
-.icon-join-teleg {
-  margin-left: 10px;
-  position: absolute;
-  top: 13px;
-}
 .btn-teleg {
   position: relative;
   color: var(--primary-white-color);
@@ -687,7 +694,14 @@ footer .container {
   padding: 10px 62px 10px 29px;
   cursor: pointer;
   margin-left: 12px;
+  width: 200px;
+  height: 50px;
   align-self: flex-end;
+}
+.icon-join-teleg {
+  right: 28px;
+  position: absolute;
+  top: 13px;
 }
 .js-speacker-form {
   display: flex;
