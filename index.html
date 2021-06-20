@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/bcg-img.css">
   </head>
   <body>
     <header>
@@ -483,7 +482,7 @@
         </div>
         <div class="telegram">
           <form>
-            <label for="mail">
+            <label for="mail" class="mail">
               <div class="mailing">
                 <h3 class="subscribe">Подпишитесь на рассылку</h3>
                 <input
@@ -532,7 +531,7 @@
             <span class="form-label">Телефон</span>
             <svg class="icon" width="18px" height="18px">
               <use
-                href="./images/icons.svg/symbol-defs-opt.svg#icon-check"
+                href="./images/icons.svg/symbol-defs-opt.svg#icon-telefone"
               ></use>
             </svg>
           </label>
@@ -566,10 +565,11 @@
             <input type="checkbox"
                 class="checkbox">
             <span class="icon-check"></span>
-            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+            <span class="check-text">Соглашаюсь с рассылкой и принимаю <a class="check-rule" href="#">Условия договора</a></span>
           </label>
         </form>
         <div class="close" data-modal-close></div>
+        <button class="modal-button" type="button">Отправить</button>
       </div>
     </div>
     <script>

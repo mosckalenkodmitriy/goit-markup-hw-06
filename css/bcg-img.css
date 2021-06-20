@@ -1,5 +1,5 @@
 .checkbox:checked + .icon-check {
   background-color: red;
-  background-image: url("../images/icons.svg/symbol-defs-opt.svg#icon-check");
+  background-image: url("../images/icons.svg/icon-check.svg");
   background-size: contain;
 }

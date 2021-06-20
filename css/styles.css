@@ -607,7 +607,7 @@ footer .container {
   position: absolute;
   right: 8px;
   top: 8px;
-  color: blue;
+  background-color: inherit;
   width: 30px;
   height: 30px;
 
@@ -618,11 +618,6 @@ footer .container {
   align-items: center;
   justify-content: center;
 }
-.close:hover {
-  color: #2196f3;
-  background-color: red;
-}
-
 .close:before,
 .close:after {
   position: absolute;
@@ -632,6 +627,7 @@ footer .container {
   height: 15px;
   width: 2px;
   background-color: #000;
+  transition: background-color 250ms var(--time-function);
 }
 .close:before {
   transform: rotate(45deg);
@@ -639,19 +635,33 @@ footer .container {
 .close:after {
   transform: rotate(-45deg);
 }
+.close:hover:after,
+.close:hover::before,
+.close:focus:after,
+.close:focus::before {
+  background-color: var(--primary-blue-color);
+}
+.close:hover:after,
+.close:hover::before {
+  background-color: var(--primary-blue-color);
+}
 .telegram {
   margin-left: 93px;
   padding: 0;
   display: flex;
 }
+.telegram .mail {
+  display: flex;
+}
 .telegram .email {
-  padding: 15px 295px 16px 15px;
+  padding: 14px 295px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: inherit;
   width: 358px;
+  color: white;
 
   font-weight: normal;
   font-size: 16px;
@@ -777,8 +787,49 @@ textarea {
 }
 .icon-check {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border: 3px solid var(--primary-text-color);
   border-radius: 2px;
+  background-size: cover;
+  transition: background-color 250ms var(--time-function),
+    background-image 250ms var(--time-function);
+}
+.checkbox:checked + .icon-check {
+  background-color: var(--primary-blue-color);
+  background-image: url(../images/icons.svg/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: none;
+}
+.check-rule {
+  text-decoration: underline;
+  color: var(--primary-blue-color);
+}
+.form-checked {
+  margin-top: 20px;
+  text-align: center;
+}
+.check-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.modal-button {
+  color: var(--primary-white-color);
+  background-color: var(--primary-blue-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  position: absolute;
+  left: 165px;
 }
