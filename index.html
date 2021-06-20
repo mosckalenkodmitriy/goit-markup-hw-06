@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bcg-img.css">
   </head>
   <body>
     <header>
@@ -480,10 +481,94 @@
             </li>
           </ul>
         </div>
+        <div class="telegram">
+          <form>
+            <label for="mail">
+              <div class="mailing">
+                <h3 class="subscribe">Подпишитесь на рассылку</h3>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+                  class="email"
+                />
+              </div>
+              <button class="btn-teleg">
+                Подписаться
+                <svg class="icon-join-teleg" width="24" height="24">
+                  <use
+                    href="./images/icons.svg/symbol-defs-opt.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="js-speacker-form">
+          <h3 class="title">Оставьте свои данные, мы вам перезвоним</h3>
+
+          <label class="form-field">
+            <input type="text" name="name" class="form-input" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <svg class="icon" width="18px" height="18px">
+              <use
+                href="./images/icons.svg/symbol-defs-opt.svg#icon-Name"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input
+              type="tel"
+              name="phone number"
+              class="form-input"
+              placeholder=" "
+            />
+            <span class="form-label">Телефон</span>
+            <svg class="icon" width="18px" height="18px">
+              <use
+                href="./images/icons.svg/symbol-defs-opt.svg#icon-check"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder=" "
+            />
+            <span class="form-label">Email</span>
+            <svg class="icon" width="18px" height="18px">
+              <use
+                href="./images/icons.svg/symbol-defs-opt.svg#icon-email"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+           <textarea
+                class="form-textarea"
+                name="feedback"
+                rows="5"
+                placeholder="Введите текст"
+            ></textarea>
+            <span class="form-label-textarea">Комментарий</span>
+          </label>
+
+          <label class="form-checked">
+            <input type="checkbox"
+                class="checkbox">
+            <span class="icon-check"></span>
+            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+          </label>
+        </form>
         <div class="close" data-modal-close></div>
       </div>
     </div>
@@ -502,6 +587,7 @@
           refs.modal.classList.toggle("is-hidden");
         }
       })();
+    </script>
     </script>
   </body>
 </html>
